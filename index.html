@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Dropdowns</title>
+</head>
+<body>
+    <form action="fetch_data.php" method="post">
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">Select Country</option>
+            <!-- Country options will be populated dynamically -->
+        </select><br>
+
+        <label for="state">State:</label>
+        <select name="state" id="state">
+            <option value="">Select State</option>
+            <!-- State options will be populated dynamically based on selected country -->
+        </select><br>
+
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="">Select City</option>
+            <!-- City options will be populated dynamically based on selected state -->
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="fetch_dropdown_data.js"></script>
+</body>
+</html>
